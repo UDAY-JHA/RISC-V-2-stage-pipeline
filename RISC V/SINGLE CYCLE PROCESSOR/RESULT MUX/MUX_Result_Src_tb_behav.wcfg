@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MUX_Result_Src_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MUX_Result_Src_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="60.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="90.251 ns"></ZoomEndTime>
+      <Cursor1Time time="12.300 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="151"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/MUX_Result_Src_tb/result_src" type="logic">
+      <obj_property name="ElementShortName">result_src</obj_property>
+      <obj_property name="ObjectShortName">result_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX_Result_Src_tb/ALU_result" type="array">
+      <obj_property name="ElementShortName">ALU_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX_Result_Src_tb/rd_data" type="array">
+      <obj_property name="ElementShortName">rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX_Result_Src_tb/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+</wave_config>
