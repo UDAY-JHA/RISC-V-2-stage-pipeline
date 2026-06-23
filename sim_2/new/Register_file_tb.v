@@ -5,7 +5,8 @@ reg [4:0] rs1,rs2,rd_out;
 reg reg_wr_out;
 reg [31:0] wr_data;
 
-wire [31:0] data1_in,data2_in;
+wire [31:0] data1_in;
+wire [31:0] data2_in;
 
 Register_file dut(
     .rs1(rs1),

@@ -45,6 +45,12 @@ module Instruction_Memory_tb;
         apply_test(32'd0);
         apply_test(32'd4);
         apply_test(32'd8);
+        apply_test(32'd12);
+        apply_test(32'd16);
+        apply_test(32'd20);
+        apply_test(32'd24);
+        apply_test(32'd28);
+        apply_test(32'd32);
        
 
         $finish;
