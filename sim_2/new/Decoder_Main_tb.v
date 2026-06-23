@@ -31,12 +31,11 @@ begin
     op_code = opcode;
     #10;
 
-    $display("opcode=%b reg_wr=%b mem_wr=%b branch=%b ALU_op=%b",
-              op_code,reg_wr_in,mem_wr_in,branch_in,ALU_op);
 end
 endtask
 
 initial begin
+
     test(7'b0000011); // lw
     test(7'b0100011); // sw
     test(7'b1100011); // beq

@@ -23,13 +23,13 @@
 module Decoder_Main(
     input [6:0] op_code,
     output reg ALU_src_in,
-    output reg result_src_in,
+    output reg [1:0]result_src_in,
     output reg mem_rd_in,
     output reg mem_wr_in,
     output reg reg_wr_in,
     output reg branch_in,
     output reg jump_in,
-    output reg [1:0] imm_src,
+    output reg [2:0] imm_src,
     output reg [1:0] ALU_op
     );
     
@@ -44,7 +44,7 @@ module Decoder_Main(
                 ALU_src_in = 1; // =0 if reg operand, =1 if imm operand
                 ALU_op = 2'b00; 
                 imm_src = 2'b00;   // = 0: I type, 1:S type, 2: B type, 3: J type 
-                result_src_in = 1'b1 ; // = 0 if result is alu result, = 1 if mem result
+                result_src_in = 2'b01 ; // = 0 if result is alu result, = 1 if mem result
             end
             7'b0110011: begin  // R type
                 reg_wr_in = 1 ;
@@ -55,7 +55,7 @@ module Decoder_Main(
                 ALU_src_in = 0 ;
                 ALU_op = 2'b10 ;
                 imm_src = 2'b00 ;
-                result_src_in = 1'b0 ;
+                result_src_in = 2'b00 ;
             end
             7'b0100011: begin // Store Word Instruction(reg to mem)
                 reg_wr_in = 0 ;
@@ -66,7 +66,7 @@ module Decoder_Main(
                 ALU_src_in = 1 ;
                 ALU_op = 2'b00 ;
                 imm_src = 2'b01 ;
-                result_src_in = 1'bx ;
+                result_src_in = 2'bxx ;
             end
             7'b1100011: begin // Branch Instruction
                 reg_wr_in = 0 ;
@@ -77,7 +77,7 @@ module Decoder_Main(
                 ALU_src_in = 0 ;
                 ALU_op = 2'b01 ;
                 imm_src = 2'b10 ;
-                result_src_in = 1'bx ;
+                result_src_in = 2'bxx ;
             end
             7'b0010011: begin // I-type Instruction
                 reg_wr_in = 1 ;
@@ -88,7 +88,7 @@ module Decoder_Main(
                 ALU_src_in = 1 ;
                 ALU_op = 2'b10 ;
                 imm_src = 2'b00 ;
-                result_src_in = 1'b0 ;
+                result_src_in = 2'b00 ;
             end
             default: begin
                 reg_wr_in = 0;
@@ -99,7 +99,7 @@ module Decoder_Main(
                 ALU_src_in = 0;
                 ALU_op = 2'b00;
                 imm_src = 2'b00;
-                result_src_in = 1'b1 ;
+                result_src_in = 2'b01 ;
             end
         endcase
     end
