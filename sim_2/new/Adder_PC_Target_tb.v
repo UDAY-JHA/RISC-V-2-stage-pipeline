@@ -16,8 +16,7 @@ begin
     PC_out=a;
     imm_data_out=b;
     #10;
-  //  $display("PC=%d IMM=%d TARGET=%d",
-    //          PC_out,imm_data_out,PC_target);
+  
 end
 endtask
 
