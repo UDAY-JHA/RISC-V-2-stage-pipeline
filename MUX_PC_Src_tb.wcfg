@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MUX_PC_Src_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MUX_PC_Src_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="85.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="115.251 ns"></ZoomEndTime>
+      <Cursor1Time time="100.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="151"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/MUX_PC_Src_tb/PC_src" type="logic">
+      <obj_property name="ElementShortName">PC_src</obj_property>
+      <obj_property name="ObjectShortName">PC_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX_PC_Src_tb/PCplus4" type="array">
+      <obj_property name="ElementShortName">PCplus4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCplus4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX_PC_Src_tb/PC_target" type="array">
+      <obj_property name="ElementShortName">PC_target[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_target[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX_PC_Src_tb/PC_nxt" type="array">
+      <obj_property name="ElementShortName">PC_nxt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_nxt[31:0]</obj_property>
+   </wvobject>
+</wave_config>

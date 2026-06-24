@@ -1,4 +1,4 @@
-module Data_Memory_tb;
+module Data_Memory_tb ;
 
 reg clk;
 reg mem_wr_out;
@@ -38,15 +38,15 @@ begin
     mem_wr_out = 0;
     #10;
 
-  //  $display("ADDR=%d DATA=%d",
-     //         addr,rd_data);
 end
 endtask
 
 initial begin
 
     clk = 0;
-
+    rst = 0 ;
+    #10 ;
+    rst = 1 ;
     write_mem(0,100);
     write_mem(4,200);
     write_mem(8,300);
