@@ -36,8 +36,8 @@ module Instruction_Memory(
            // addi x5, x0, 4
     mem[0] = 32'h00400293;
 
-    // addi x6, x0, 5
-    mem[1] = 32'h00500313;
+//    // addi x6, x0, 5
+   mem[1] = 32'h00500313;
 
     // addi x7, x0, 6
     mem[2] = 32'h00600393;

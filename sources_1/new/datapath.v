@@ -271,7 +271,7 @@ module data_path(
     MUX_PC_Src PC_MUX(
         .PC_src(PC_src),
 
-        .PCplus4_out(PCplus4_out),
+        .PCplus4_in(PCplus4_in),
         .PC_target(PC_target),
 
         .PC_nxt(PC_nxt)

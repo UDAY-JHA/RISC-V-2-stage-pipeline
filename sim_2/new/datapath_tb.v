@@ -35,8 +35,8 @@ always #5 clk = ~clk ;
 
 initial begin
     clk = 0 ; rst = 0 ;
-    #10 rst = 1 ;
-    #100 $finish ;
+    #1 rst = 1 ;
+    #200 $finish ;
 end
     
 endmodule

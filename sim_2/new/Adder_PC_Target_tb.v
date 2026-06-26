@@ -1,20 +1,20 @@
 module Adder_PC_Target_tb;
 
-reg [31:0] PC_out;
-reg [31:0] imm_data_out;
+reg [31:0] PC_in;
+reg [31:0] imm_data_in;
 wire [31:0] PC_target;
 
 Adder_PC_Target dut(
-    .PC_out(PC_out),
-    .imm_data_out(imm_data_out),
+    .PC_in(PC_in),
+    .imm_data_in(imm_data_in),
     .PC_target(PC_target)
 );
 
 task test;
 input [31:0] a,b;
 begin
-    PC_out=a;
-    imm_data_out=b;
+    PC_in=a;
+    imm_data_in=b;
     #10;
   
 end

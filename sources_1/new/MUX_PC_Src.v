@@ -22,11 +22,11 @@
 
 module MUX_PC_Src(
     input PC_src,
-    input [31:0] PCplus4_out,
+    input [31:0] PCplus4_in,
     input [31:0] PC_target,
     output [31:0] PC_nxt
     );
     
-    assign PC_nxt = (PC_src) ? PC_target : PCplus4_out;
+    assign PC_nxt = (PC_src) ? PC_target : PCplus4_in;
     
 endmodule
