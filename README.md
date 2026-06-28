@@ -253,13 +253,15 @@ Modules responsible for fetching the next instruction:
 - PC Adder (PC+4)
 - PC MUX
 - Instruction Memory
+- Main control unit
+- Register File
+- Immediate ext unit
 
 **Part 2 — Decode / Execute Stage**
 Modules that decode the instruction and perform computation:
-- Register File
-- Immediate Generator (Extend Unit)
-- Control Unit
 - ALU
+- PC target adder
+- ALU MUX
 - Data Memory
 - Result MUX
 
